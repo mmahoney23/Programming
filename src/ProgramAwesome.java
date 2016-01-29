@@ -124,7 +124,7 @@ public class ProgramAwesome {
                 System.out.println("Sorry, but you didn't win.");
             }
         }
-        System.out.println("I have to go now. Have a good day.");
+        System.out.println("I have to shut off now, because my mastr thinks I need some work.");
 
 
     }
