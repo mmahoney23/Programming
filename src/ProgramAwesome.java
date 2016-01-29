@@ -1,7 +1,7 @@
 import java.util.Objects;
 import java.util.Scanner;
 
-class Questions {
+class ProgramAwesome {
     public static void main(String[] args) {
         String name;
         int age;
