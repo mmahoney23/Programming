@@ -1,14 +1,13 @@
 import java.util.Objects;
 import java.util.Scanner;
 
-public class ProgramAwesome {
+class Questions {
     public static void main(String[] args) {
         String name;
         int age;
         int number;
         String favoriteclass;
         String mathlevel;
-        String food;
         String sciencelevel;
         String foreignlanguege;
         String instrument;
@@ -91,7 +90,7 @@ public class ProgramAwesome {
             }
         }
         if (Objects.equals(favoriteclass, "band/orchestra")) {
-            System.out.print("My master is in band. He plays the trumpet. What instrument do you play: trumpet, clarinet, flute, saxophone, low brass, or string instrument?");
+            System.out.print("My master is in band. He plays the trumpet. What instrument do you play: trumpet, clarinet, flute, saxophone, low brass, percussion, or string instrument?");
             instrument = keyboard.next();
             if (instrument.equals("trumpet")) {
                 System.out.println("My master plays the trumpet too. He is good at it.");
@@ -111,22 +110,24 @@ public class ProgramAwesome {
             if (instrument.equals("string instrument")) {
                 System.out.println("Oh. Cool.  It must be fun to be in the orchestra.");
             }
+            if (instrument.equals("percussion")){
+                System.out.println("");
+            }
         }
-        System.out.println("I have too go soon, but can you play a quick game with me first?");
+        System.out.println("Would you like to play a game with me? There is a prize if you win.");
         game = keyboard.next();
         if (game.equals("yes")){
             System.out.println("Great! Pick a number, any number.  If you pick the right number, my master will give you a prize.");
             number = keyboard.nextInt();
             if (number <= 12){
-                System.out.println("Congratulations! My master will give you a prize!");
+                System.out.println("Congratulations! You get a prize!");
             }
             if (number > 12){
                 System.out.println("Sorry, but you didn't win.");
             }
         }
-        System.out.println("I have to shut off now, because my mastr thinks I need some work.");
+        System.out.println("I have to shut off now, because my master thinks I need some maintenance. Apparently I have been showing too many signs of having a personality.");
 
 
     }
 }
-
