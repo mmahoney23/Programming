@@ -42,15 +42,15 @@ class ProgramAwesome {
             System.out.print("That's my master's favorite class too.");
         }
         if (Objects.equals(favoriteclass, "math")) {
-            System.out.print("What math class are you in?");
+            System.out.print("What math class are you in: geometry, algebra, algebra 2, or pre-calculus?");
             mathlevel = keyboard.next();
             if (Objects.equals(mathlevel, "geometry")) {
                 System.out.println("My master likes that kind of math best of all!");
             }
-            if (Objects.equals(mathlevel, "Algebra")) {
+            if (Objects.equals(mathlevel, "algebra")) {
                 System.out.println("My master doesn't really like Algebra that much, but I do.");
             }
-            if (Objects.equals(mathlevel, "Algebra 2")) {
+            if (Objects.equals(mathlevel, "a10lgebra 2")) {
                 System.out.println("My master is currently in that class.  He has it in Dark Blue period.");
             }
             if (mathlevel.equals("pre-calculus")) {
@@ -111,7 +111,7 @@ class ProgramAwesome {
                 System.out.println("Oh. Cool.  It must be fun to be in the orchestra.");
             }
             if (instrument.equals("percussion")){
-                System.out.println("");
+                System.out.println("Lucky.  All you have to do is hit stuff with sticks.");
             }
         }
         System.out.println("Would you like to play a game with me? There is a prize if you win.");
