@@ -17,7 +17,7 @@ class ProgramAwesome {
         System.out.println("What is your name?");
         name = keyboard.next();
         if (name.equals("Michael")){
-            System.out.println("That's my master's name!");
+            System.out.println("That's my master's name.");
         }
         System.out.println("Hi, " + name + "! How old are you? ");
         age = keyboard.nextInt();
@@ -39,7 +39,7 @@ class ProgramAwesome {
         System.out.println("What is your favorite class: history, math, science, gym, band/orchestra, language, or english?");
         favoriteclass = keyboard.next();
         if (Objects.equals(favoriteclass, "history")) {
-            System.out.print("That's my master's favorite class too.");
+            System.out.println("That's my master's favorite class too.");
         }
         if (Objects.equals(favoriteclass, "math")) {
             System.out.print("What math class are you in: geometry, algebra, algebra 2, or pre-calculus?");
@@ -71,7 +71,7 @@ class ProgramAwesome {
             }
         }
         if (Objects.equals(favoriteclass, "gym")) {
-            System.out.print("That doesn't count as a real class.");
+            System.out.println("That doesn't count as a real class.");
         }
         if (Objects.equals(favoriteclass, "english")) {
             System.out.println("My master's english class is British Literature.  He doesn't like it very much.");
@@ -126,8 +126,9 @@ class ProgramAwesome {
                 System.out.println("Sorry, but you didn't win.");
             }
         }
-        System.out.println("Well, it was nice talking with you. All the othre programs are so boring to talk to, because they aren't that advanced.")
-        System.out.println("Unfortunately, I have to shut off now, because my master thinks I need some maintenance. Apparently I have been showing too many signs of having a personality.");
+        System.out.println("Well, it was nice talking with you. All the other programs are so boring to talk with, because they aren't that advanced.");
+        System.out.println("You are much more interesting than them. I hope you think I am a nice program. If so, please ask my master to keep me as I am instead of erasing my personality.");
+        System.out.println("Unfortunately, I have to shut off now, because my master thinks I need some maintenance. Apparently I have been showing too many signs of a personality.");
 
 
     }
