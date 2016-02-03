@@ -126,7 +126,8 @@ class ProgramAwesome {
                 System.out.println("Sorry, but you didn't win.");
             }
         }
-        System.out.println("I have to shut off now, because my master thinks I need some maintenance. Apparently I have been showing too many signs of having a personality.");
+        System.out.println("Well, it was nice talking with you. All the othre programs are so boring to talk to, because they aren't that advanced.")
+        System.out.println("Unfortunately, I have to shut off now, because my master thinks I need some maintenance. Apparently I have been showing too many signs of having a personality.");
 
 
     }
