@@ -50,7 +50,7 @@ class ProgramAwesome {
             if (Objects.equals(mathlevel, "algebra")) {
                 System.out.println("My master doesn't really like Algebra that much, but I do.");
             }
-            if (Objects.equals(mathlevel, "a10lgebra 2")) {
+            if (Objects.equals(mathlevel, "algebra 2")) {
                 System.out.println("My master is currently in that class.  He has it in Dark Blue period.");
             }
             if (mathlevel.equals("pre-calculus")) {
