@@ -35,7 +35,6 @@ class ProgramAwesome {
             System.out.println("a baby.");
         }
 
-
         System.out.println("What is your favorite class: history, math, science, gym, band/orchestra, language, or english?");
         favoriteclass = keyboard.next();
         if (Objects.equals(favoriteclass, "history")) {
@@ -126,9 +125,10 @@ class ProgramAwesome {
                 System.out.println("Sorry, but you didn't win.");
             }
         }
-        System.out.println("Well, it was nice talking with you. All the other programs are so boring to talk with, because they aren't that advanced.");
+        System.out.println("Well, it was nice talking with you. For once I got to hear some intelligent conversation.");
+        System.out.println("All the other programs are so boring to talk with, because they aren't that advanced.");
         System.out.println("You are much more interesting than them. I hope you think I am a nice program. If so, please ask my master to keep me as I am instead of erasing my personality.");
-        System.out.println("Unfortunately, I have to shut off now, because my master thinks I need some maintenance. Apparently I have been showing too many signs of a personality.");
+        System.out.println("Unfortunately, I have to shut off now, because my master thinks I need some maintenance. Apparently having a personality is not encouraged in programs like me.");
 
 
     }
