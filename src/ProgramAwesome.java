@@ -12,6 +12,7 @@ class ProgramAwesome {
         String foreignlanguege;
         String instrument;
         String game;
+        String color;
 
         Scanner keyboard = new Scanner(System.in);
         System.out.println("What is your name?");
@@ -65,7 +66,7 @@ class ProgramAwesome {
             if (sciencelevel.equals("biology")) {
                 System.out.println("That is cool.");
             }
-            if (sciencelevel.equals("general science")) {
+            if (sciencelevel.equals("general_science")) {
                 System.out.println("That class is interesting. You cover so much different material.");
             }
         }
@@ -75,7 +76,7 @@ class ProgramAwesome {
         if (Objects.equals(favoriteclass, "english")) {
             System.out.println("My master's english class is British Literature.  He doesn't like it very much.");
         }
-        if (Objects.equals(favoriteclass, "foreign language")) {
+        if (Objects.equals(favoriteclass, "foreign_language")) {
             System.out.print("Which foreign language do you take?");
             foreignlanguege = keyboard.next();
             if (foreignlanguege.equals("spanish")) {
@@ -112,6 +113,14 @@ class ProgramAwesome {
             if (instrument.equals("percussion")){
                 System.out.println("Lucky.  All you have to do is hit stuff with sticks.");
             }
+        }
+        System.out.println("What is your favorite color?");
+        color = keyboard.next();
+        if (color.equals("orange")){
+            System.out.println("My master's favorite color is orange.");
+        }
+        if (color.equals("blue")){
+            System.out.println("My master likes that color too.")
         }
         System.out.println("Would you like to play a game with me? There is a prize if you win.");
         game = keyboard.next();
