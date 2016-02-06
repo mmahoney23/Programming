@@ -122,6 +122,15 @@ class ProgramAwesome {
         if (color.equals("blue")){
             System.out.println("My master likes that color too.")
         }
+        if (color.equals("green")){
+            System.out.println("That is a very nice color.")
+        }
+        if (color.equals("red")){
+            System.out.println("That is interesting.")
+        }
+        if (color.equals("purple")){
+            System.out.println("That is such a nice color.")
+        }    
         System.out.println("Would you like to play a game with me? There is a prize if you win.");
         game = keyboard.next();
         if (game.equals("yes")){
