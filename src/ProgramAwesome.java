@@ -13,6 +13,8 @@ class ProgramAwesome {
         String instrument;
         String game;
         String color;
+        String look;
+        String food;
 
         Scanner keyboard = new Scanner(System.in);
         System.out.println("What is your name?");
@@ -36,7 +38,7 @@ class ProgramAwesome {
             System.out.println("a baby.");
         }
 
-        System.out.println("What is your favorite class: history, math, science, gym, band/orchestra, language, or english?");
+        System.out.println("What is your favorite class: history, math, science, gym, band/orchestra, language, choir, or english?");
         favoriteclass = keyboard.next();
         if (Objects.equals(favoriteclass, "history")) {
             System.out.println("That's my master's favorite class too.");
@@ -89,6 +91,9 @@ class ProgramAwesome {
                 System.out.println("The mother of my master knows french.  She went to France twice, once in high school and once in college.");
             }
         }
+        if (favoriteclass.equals("choir")){
+            System.out.println("The choir sounded very good at the last concert. You do a nice job.");
+        }
         if (Objects.equals(favoriteclass, "band/orchestra")) {
             System.out.print("My master is in band. He plays the trumpet. What instrument do you play: trumpet, clarinet, flute, saxophone, low brass, percussion, or string instrument?");
             instrument = keyboard.next();
@@ -120,18 +125,37 @@ class ProgramAwesome {
             System.out.println("My master's favorite color is orange.");
         }
         if (color.equals("blue")){
-            System.out.println("My master likes that color too.")
+            System.out.println("My master likes that color too.");
         }
         if (color.equals("green")){
-            System.out.println("That is a very nice color.")
+            System.out.println("That is a very nice color.");
         }
         if (color.equals("red")){
-            System.out.println("That is interesting.")
+            System.out.println("That is interesting.");
         }
         if (color.equals("purple")){
-            System.out.println("That is such a nice color.")
-        }    
-        System.out.println("Would you like to play a game with me? There is a prize if you win.");
+            System.out.println("That is such a nice color.");
+        }
+        if (color.equals("yellow")){
+            System.out.println("That is a nice color.");
+        }
+        if (color.equals("pink")){
+            System.out.println("That is such a nice color.");
+        }
+        System.out.println("What is your favorite food?");
+        food = keyboard.next();
+        System.out.println("Yum. You are so lucky that you can eat food.  That is one thing that I will never be able to do.");
+        /*System.out.println("May I look at you? You know, with the camera on this computer.");
+        look = keyboard.next();
+        if (look.equals("yes")){
+            System.out.println("You are a very pretty girl. Say, do you know my master? You might like him. He is a very smart boy, good at math, chemistry, and history.");
+            System.out.println("He plays soccer and golf, and is reasonably good at both.");
+            System.out.println("Oh, and his name is -. Oops.  I am forbidden to say his name.");
+        }
+        if (look.equals("no")){
+            System.out.println("Okay then. As you wish.");
+        }*/
+        System.out.println("Anyway, would you like to play a game with me? There is a prize if you win.");
         game = keyboard.next();
         if (game.equals("yes")){
             System.out.println("Great! Pick a number, any number.  If you pick the right number, my master will give you a prize.");
@@ -146,7 +170,7 @@ class ProgramAwesome {
         System.out.println("Well, it was nice talking with you. For once I got to hear some intelligent conversation.");
         System.out.println("All the other programs are so boring to talk with, because they aren't that advanced.");
         System.out.println("You are much more interesting than them. I hope you think I am a nice program. If so, please ask my master to keep me as I am instead of erasing my personality.");
-        System.out.println("Unfortunately, I have to shut off now, because my master thinks I need some maintenance. Apparently having a personality is not encouraged in programs like me.");
+        System.out.println("Unfortunately, I have to shut off now, because my master thinks I need some maintenance. Apparently having a personality is not encouraged in programs like me. :( ");
 
 
     }
