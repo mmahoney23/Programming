@@ -1,28 +1,21 @@
-import java.util.Objects;
 import java.util.Scanner;
 
-class ProgramAwesome {
+public class ProgramAwesome {
     public static void main(String[] args) {
+        Scanner keyboard = new Scanner(System.in);
         String name;
         int age;
-        int number;
-        String favoriteclass;
-        String mathlevel;
-        String sciencelevel;
-        String foreignlanguege;
-        String instrument;
-        String game;
-        String color;
-        String look;
         String food;
+        int number;
+        String game;
 
-        Scanner keyboard = new Scanner(System.in);
-        System.out.println("What is your name?");
-        name = keyboard.next();
-        if (name.equals("Michael")){
-            System.out.println("That's my master's name.");
+        switch (name = keyboard.next()){
+            case "Michael":
+                System.out.println("That's my master's name!");
+                System.out.println("Hi" + name + "! How old are you?");
+            default:
+                System.out.println("Hi" + name + "! How old are you?");
         }
-        System.out.println("Hi, " + name + "! How old are you? ");
         age = keyboard.nextInt();
         System.out.print("You must be ");
         if (age >= 14 && age <= 18) {
@@ -37,110 +30,84 @@ class ProgramAwesome {
         if (age < 5) {
             System.out.println("a baby.");
         }
-
         System.out.println("What is your favorite class: history, math, science, gym, band/orchestra, language, choir, or english?");
-        favoriteclass = keyboard.next();
-        if (Objects.equals(favoriteclass, "history")) {
-            System.out.println("That's my master's favorite class too.");
-        }
-        if (Objects.equals(favoriteclass, "math")) {
-            System.out.print("What math class are you in: geometry, algebra, algebra 2, or pre-calculus?");
-            mathlevel = keyboard.next();
-            if (Objects.equals(mathlevel, "geometry")) {
-                System.out.println("My master likes that kind of math best of all!");
-            }
-            if (Objects.equals(mathlevel, "algebra")) {
-                System.out.println("My master doesn't really like Algebra that much, but I do.");
-            }
-            if (Objects.equals(mathlevel, "algebra 2")) {
-                System.out.println("My master is currently in that class.  He has it in Dark Blue period.");
-            }
-            if (mathlevel.equals("pre-calculus")) {
-                System.out.println("That is a very advanced class. You must be very smart.");
-            }
-        }
-        if (Objects.equals(favoriteclass, "science")) {
-            System.out.print("What kind of science do you take?");
-            sciencelevel = keyboard.next();
-            if (sciencelevel.equals("chemistry")) {
-                System.out.println("My master is in that class.  He is good at it.");
-            }
-            if (sciencelevel.equals("biology")) {
-                System.out.println("That is cool.");
-            }
-            if (sciencelevel.equals("general_science")) {
-                System.out.println("That class is interesting. You cover so much different material.");
-            }
-        }
-        if (Objects.equals(favoriteclass, "gym")) {
-            System.out.println("That doesn't count as a real class.");
-        }
-        if (Objects.equals(favoriteclass, "english")) {
-            System.out.println("My master's english class is British Literature.  He doesn't like it very much.");
-        }
-        if (Objects.equals(favoriteclass, "foreign_language")) {
-            System.out.print("Which foreign language do you take?");
-            foreignlanguege = keyboard.next();
-            if (foreignlanguege.equals("spanish")) {
-                System.out.println("My master is in that class.  He is good at it.");
-            }
-            if (foreignlanguege.equals("latin")) {
-                System.out.println("That is cool.");
-            }
-            if (foreignlanguege.equals("french")) {
-                System.out.println("The mother of my master knows french.  She went to France twice, once in high school and once in college.");
-            }
-        }
-        if (favoriteclass.equals("choir")){
-            System.out.println("The choir sounded very good at the last concert. You do a nice job.");
-        }
-        if (Objects.equals(favoriteclass, "band/orchestra")) {
-            System.out.print("My master is in band. He plays the trumpet. What instrument do you play: trumpet, clarinet, flute, saxophone, low brass, percussion, or string instrument?");
-            instrument = keyboard.next();
-            if (instrument.equals("trumpet")) {
-                System.out.println("My master plays the trumpet too. He is good at it.");
-            }
-            if (instrument.equals("clarinet")) {
-                System.out.println("The sister of my master plays the clarinet.");
-            }
-            if (instrument.equals("flute")) {
-                System.out.println("How interesting.  That is a very small instrument.");
-            }
-            if (instrument.equals("saxophone")) {
-                System.out.println("Cool.");
-            }
-            if (instrument.equals("low brass")) {
-                System.out.println("You must play a large instrument.");
-            }
-            if (instrument.equals("string instrument")) {
-                System.out.println("Oh. Cool.  It must be fun to be in the orchestra.");
-            }
-            if (instrument.equals("percussion")){
-                System.out.println("Lucky.  All you have to do is hit stuff with sticks.");
-            }
+        switch (keyboard.next()){
+            case "history":
+                System.out.println("That's my master's favorite class too.");
+            case "math":
+                System.out.print("What math class are you in: geometry, algebra, algebra 2, or pre-calculus?");
+                switch (keyboard.next()){
+                    case "geometry":
+                        System.out.println("My master likes that kind of math best of all!");
+                    case "algebra":
+                        System.out.println("My master doesn't really like Algebra that much, but I do.");
+                    case "algebra 2":
+                        System.out.println("My master is currently in that class.");
+                    case "pre-calculus":
+                        System.out.println("That is a very advanced class. You must be very smart.");
+                }
+            case "science":
+                System.out.println("What kind of science do you take?");
+                switch (keyboard.next()){
+                    case "chemistry":
+                        System.out.println("My master is in that class.  He is good at it.");
+                    case "biology":
+                        System.out.println("That is cool.");
+                    case "general science":
+                        System.out.println("That class is interesting. You cover so much different material.");
+                }
+            case "gym":
+                System.out.println("That doesn't count as a real class.");
+            case "english":
+                System.out.println("My master's english class is British Literature.  He doesn't like it very much.");
+            case "foreign language":
+                System.out.println("What foreign language do you take?");
+                switch (keyboard.next()){
+                    case "spanish":
+                        System.out.println("My master is in that class.  He is good at it.");
+                    case "latin":
+                        System.out.println("That is cool.");
+                    case "french":
+                        System.out.println("The mother of my master knows french.  She went to France twice, once in high school and once in college.");
+                }
+            case "band/orchestra":
+                System.out.print("My master is in band. He plays the trumpet. What instrument do you play: trumpet, clarinet, flute, saxophone, low brass, percussion, or string instrument?");
+                switch (keyboard.next()){
+                    case "trumpet":
+                        System.out.println("My master plays the trumpet too. He is good at it.");
+
+                    case "clarinet":
+                        System.out.println("The sister of my master plays the clarinet.");
+                    case "flute":
+                        System.out.println("How interesting.  That is a very small instrument.");
+                    case "saxophone":
+                        System.out.println("Cool.");
+                    case "low brass":
+                        System.out.println("You must play a large instrument.");
+                    case "string instrument":
+                        System.out.println("Oh. Cool.  It must be fun to be in the orchestra.");
+                    case "percussion":
+                        System.out.println("Lucky.  All you have to do is hit stuff with sticks.");
+                }
+            case "choir":
+                System.out.println("The choir sounded very good at the last concert. You do a nice job.");
         }
         System.out.println("What is your favorite color?");
-        color = keyboard.next();
-        if (color.equals("orange")){
-            System.out.println("My master's favorite color is orange.");
-        }
-        if (color.equals("blue")){
-            System.out.println("My master likes that color too.");
-        }
-        if (color.equals("green")){
-            System.out.println("That is a very nice color.");
-        }
-        if (color.equals("red")){
-            System.out.println("That is interesting.");
-        }
-        if (color.equals("purple")){
-            System.out.println("That is such a nice color.");
-        }
-        if (color.equals("yellow")){
-            System.out.println("That is a nice color.");
-        }
-        if (color.equals("pink")){
-            System.out.println("That is such a nice color.");
+        switch (keyboard.next()){
+            case "orange":
+                System.out.println("My master's favorite color is orange.");
+            case "blue":
+                System.out.println("My master likes that color too.");
+            case "green":
+                System.out.println("That is a very nice color.");
+            case "red":
+                System.out.println("That is interesting.");
+            case "purple":
+                System.out.println("That is such a nice color.");
+            case "yellow":
+                System.out.println("That is a nice color.");
+            case "pink":
+                System.out.println("That is such a nice color.");
         }
         System.out.println("What is your favorite food?");
         food = keyboard.next();
@@ -171,7 +138,5 @@ class ProgramAwesome {
         System.out.println("All the other programs are so boring to talk with, because they aren't that advanced.");
         System.out.println("You are much more interesting than them. I hope you think I am a nice program. If so, please ask my master to keep me as I am instead of erasing my personality.");
         System.out.println("Unfortunately, I have to shut off now, because my master thinks I need some maintenance. Apparently having a personality is not encouraged in programs like me. :( ");
-
-
     }
 }
