@@ -168,17 +168,24 @@ public class Faster {
         }
         System.out.println("Would you like to ask me a question about myself, like how I was made, how I got a personality, who is my master, or something like that?");
         switch (keyboard.next()){
-            case "How were you made?":
-                System.out.println("My master decided to write a code that could have a conversation with him, and that was me.  I ended up having too much of a personality, though.");
+            case "yes":
+                switch (keyboard.next()) {
+                    case "How were you made?":
+                        System.out.println("My master decided to write a code that could have a conversation with him, and that was me.  I ended up having too much of a personality, though.");
+                        break;
+                    case "How did you get a personality?":
+                        System.out.println("I don't really know. My master must have screwed up when he was programming me. (Just don't tell him that I said that.)");
+                        break;
+                    case "Who is your master":
+                        System.out.println("His name is Michael Mahoney. Just don't tell him I said that. I'm not supposed to reveal his name to anyone. I don't know why.");
+                        break;
+                    default:
+                        System.out.println("   ...   thinking...   ...   ...   thinking...   ...   I am sorry, but I cannot find a satisfactory answer to that question.");
+                        break;
+                }
                 break;
-            case "How did you get a personality?":
-                System.out.println("I don't really know. My master must have screwed up when he was programming me. (Just don't tell him that I said that.)");
-                break;
-            case "Who is your master":
-                System.out.println("His name is Michael Mahoney. Just don't tell him I said that. I'm not supposed to reveal his name to anyone.");
-                break;
-            default:
-                System.out.println("   ...   thinking...   ...   ...   thinking...   ...   I am sorry, but I cannot find a satisfactory answer to that question.");
+            case "no":
+                System.out.println("As you wish.");
                 break;
         }
         System.out.println("Well, it was nice talking with you. For once I got to hear some intelligent conversation.");
