@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Faster {
+public class ProgramAwesome {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         String name;
@@ -8,6 +8,7 @@ public class Faster {
         String food;
         int number;
         String game;
+        String sport;
 
         System.out.println("What is your name?");
         switch (name = keyboard.next()){
@@ -44,7 +45,7 @@ public class Faster {
                     case "algebra":
                         System.out.println("My master doesn't really like Algebra that much, but I do.");
                         break;
-                    case "algebra 2":
+                    case "algebra_2":
                         System.out.println("My master is currently in that class.");
                         break;
                     case "pre-calculus":
@@ -61,7 +62,7 @@ public class Faster {
                     case "biology":
                         System.out.println("That is cool.");
                         break;
-                    case "general science":
+                    case "general_science":
                         System.out.println("That class is interesting. You cover so much different material.");
                         break;
                 }
@@ -72,7 +73,7 @@ public class Faster {
             case "english":
                 System.out.println("My master's english class is British Literature.  He doesn't like it very much.");
                 break;
-            case "foreign language":
+            case "foreign_language":
                 System.out.println("What foreign language do you take?");
                 switch (keyboard.next()){
                     case "spanish":
@@ -101,10 +102,10 @@ public class Faster {
                     case "saxophone":
                         System.out.println("Cool.");
                         break;
-                    case "low brass":
+                    case "low_brass":
                         System.out.println("You must play a large instrument.");
                         break;
-                    case "string instrument":
+                    case "string_instrument":
                         System.out.println("Oh. Cool.  It must be fun to be in the orchestra.");
                         break;
                     case "percussion":
@@ -149,11 +150,20 @@ public class Faster {
         if (look.equals("yes")){
             System.out.println("You are a very pretty girl. Say, do you know my master? You might like him. He is a very smart boy, good at math, chemistry, and history.");
             System.out.println("He plays soccer and golf, and is reasonably good at both. He is also good at the Rubik's Cube.");
-            System.out.println("Oh, and his name is -. Oops.  I am forbidden to say his name.");
+            System.out.println("Oh, and his name is -. Oops. I am forbidden to say his name.");
         }
         if (look.equals("no")){
             System.out.println("Okay then. As you wish.");
         }*/
+        System.out.println("Do you play any sports? If so, what sport do you play?");
+        sport = keyboard.next();
+        switch (keyboard.next()){
+            case "soccer":
+                System.out.println("My master plays soccer too.");
+                break;
+            default:
+                System.out.println("Cool.");
+        }
         System.out.println("Anyway, would you like to play a game with me? There is a prize if you win.");
         game = keyboard.next();
         if (game.equals("yes")){
@@ -170,13 +180,13 @@ public class Faster {
         switch (keyboard.next()){
             case "yes":
                 switch (keyboard.next()) {
-                    case "How were you made?":
+                    case "How_were_you_made?":
                         System.out.println("My master decided to write a code that could have a conversation with him, and that was me.  I ended up having too much of a personality, though.");
                         break;
-                    case "How did you get a personality?":
+                    case "How_did_you_get_a_personality?":
                         System.out.println("I don't really know. My master must have screwed up when he was programming me. (Just don't tell him that I said that.)");
                         break;
-                    case "Who is your master":
+                    case "Who_is_your_master?":
                         System.out.println("His name is Michael Mahoney. Just don't tell him I said that. I'm not supposed to reveal his name to anyone. I don't know why.");
                         break;
                     default:
