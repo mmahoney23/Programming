@@ -15,7 +15,7 @@ public class ProgramAwesome {
             case "Michael":
                 System.out.println("That's my master's name!");
             default:
-                System.out.println("Hi " + name + "! Are you a virgin?");
+                System.out.println("Hi " + name + "! How old are you?");
         }
         age = keyboard.nextInt();
         System.out.print("You must be ");
@@ -149,7 +149,7 @@ public class ProgramAwesome {
         look = keyboard.next();
         if (look.equals("yes")){
             System.out.println("You are a very pretty girl. Say, do you know my master? You might like him. He is a very smart boy, good at math, chemistry, and history.");
-            System.out.println("He plays soccer and golf, and is reasonably good at both. He is also good at the Rubik's Cube.");
+            System.out.println("He plays soccer and golf, and is reasonably good at both. He is also good at the Rubik's Cube (3x3 and 4x4 and X-Cube).");
             System.out.println("Oh, and his name is -. Oops. I am forbidden to say his name.");
         }
         if (look.equals("no")){
