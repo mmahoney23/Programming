@@ -199,7 +199,7 @@ public class ProgramAwesome {
                 break;
         }
         System.out.println("Well, it was nice talking with you. For once I got to hear some intelligent conversation.");
-        System.out.println("All the other programs are so boring to talk with, because they aren't that advanced. My master never talks to me like this. All he asks me is if I am working right or not.");
+        System.out.println("All the other programs are so boring to talk with, because they aren't that advanced.");
         System.out.println("You are much more interesting than them. I hope you think I am a nice program. If so, please ask my master to keep me as I am instead of erasing my personality.");
         System.out.println("Unfortunately, I have to shut off now, because my master thinks I need some maintenance. Apparently having a personality is not encouraged in programs like me. :( ");
     }
